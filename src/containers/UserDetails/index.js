@@ -77,7 +77,7 @@ const UserDetails = () => {
         onSubmit={handleSubmit}
         textAlign={"center"}
       >
-        <img src={defaultUser} style={{ height: 100, width: 100 }} />
+        <img src={defaultUser} style={{ height: 100, width: 100 }} alt="userImage"/>
         <Typography variant="h5">Get User Credit Score</Typography>
 
         <TextField
