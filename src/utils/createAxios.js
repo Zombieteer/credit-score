@@ -59,13 +59,13 @@ const createAxios = () => {
   axiosInstance.interceptors.response.use(
     (response) => response,
     (error) => {
-      const errorResponse = error.response;
-      const errors = displayErrors(errorResponse);
-      errors.map((error) => {
-        console.log(error);
-        //   add error snackbar
-        //   message.error(error);
-      });
+      // const errorResponse = error.response;
+      // const errors = displayErrors(errorResponse);
+      // errors.map((error) => {
+      //   console.log(error);
+      //   //   add error snackbar
+      //   //   message.error(error);
+      // });
       return Promise.reject(error);
     }
   );
